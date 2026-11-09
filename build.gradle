@@ -1,3 +1,17 @@
-plugins {
-    id 'com.android.application' version '8.1.4' apply false
+plugins { id 'com.android.application' }
+
+android {
+    namespace 'com.example.topobt'
+    compileSdk 36
+    defaultConfig {
+        applicationId "com.example.topobt"
+        minSdk 21
+        targetSdk 34
+        versionCode 11
+        versionName "1.10"
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
 }
